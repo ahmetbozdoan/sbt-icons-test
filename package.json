@@ -1,6 +1,6 @@
 {
   "name": "@ahmetbozdoan/sbt-icons",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Sebit icons powered by icomoon.io",
   "main": "dist/style.css",
   "scripts": {
@@ -20,5 +20,8 @@
   },
   "publishConfig": {
     "registry": "https://npm.pkg.github.com/ahmetbozdoan"
+  },
+  "devDependencies": {
+    "netlify-plugin-chromium": "^1.1.4"
   }
 }
