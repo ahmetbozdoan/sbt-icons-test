@@ -24,3 +24,6 @@ jobs:
             - run: npm publish
               env:
                   NODE_AUTH_TOKEN: ${{secrets.GITHUB_TOKEN}}
+permissions:
+    contents: write   # Bu izin yazma işlemi için gereklidir
+    packages: read    # Eğer GitHub Packages kullanıyorsanız
