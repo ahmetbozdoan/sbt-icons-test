@@ -34,6 +34,3 @@ jobs:
           NODE_AUTH_TOKEN: ${{secrets.GITHUB_TOKEN}}
       - name: "cat package.json"
         run: cat ./package.json
-permissions:
-    contents: write   # Bu izin yazma işlemi için gereklidir
-    packages: read    # Eğer GitHub Packages kullanıyorsanız
