@@ -1,0 +1,60 @@
+{
+  "IcoMoonType": "selection",
+  "icons": [],
+  "height": 1024,
+  "metadata": {
+    "name": "sbt-icons"
+  },
+  "preferences": {
+    "showGlyphs": true,
+    "showQuickUse": true,
+    "showQuickUse2": true,
+    "showSVGs": true,
+    "fontPref": {
+      "prefix": "sbt-icon-",
+      "metadata": {
+        "fontFamily": "sbt-icons",
+        "majorVersion": 1,
+        "minorVersion": 0
+      },
+      "metrics": {
+        "emSize": 1024,
+        "baseline": 6.25,
+        "whitespace": 50
+      },
+      "embed": false,
+      "postfix": "",
+      "showSelector": false,
+      "showMetrics": false,
+      "showMetadata": false,
+      "showVersion": false,
+      "ie7": false,
+      "noie8": false,
+      "flutter": false,
+      "cssVars": true,
+      "cssVarsFormat": "scss",
+      "selector": "",
+      "classSelector": ".sbt",
+      "includeMetadata": false,
+      "addZero": false
+    },
+    "imagePref": {
+      "prefix": "sbt-icon-",
+      "png": false,
+      "useClassSelector": true,
+      "color": 0,
+      "bgColor": 16777215,
+      "classSelector": ".icon",
+      "name": "sbt-icons",
+      "height": 32,
+      "columns": 16,
+      "margin": 16,
+      "minifyJs": true,
+      "numPrefix": false
+    },
+    "historySize": 50,
+    "showCodes": true,
+    "gridSize": 16,
+    "showLiga": false
+  }
+}
