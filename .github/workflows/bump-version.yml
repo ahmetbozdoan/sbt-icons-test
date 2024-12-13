@@ -32,6 +32,6 @@ jobs:
           patch-wording: 'patch,fixes'     # Providing patch-wording will override commits, defaulting to a patch bump.
           rc-wording: 'RELEASE,alpha'
         env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          GITHUB_TOKEN: ${{ secrets.GH_PERSONAL_TOKEN }}
       - name: "cat package.json"
         run: cat ./package.json
