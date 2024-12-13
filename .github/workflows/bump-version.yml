@@ -9,7 +9,7 @@ jobs:
   bump-version:
     name: "Bump Version on main"
     runs-on: ubuntu-latest
-
+    environment: GH_PERSONAL_TOKEN
     steps:
       - name: "Checkout source code"
         uses: "actions/checkout@v3"
