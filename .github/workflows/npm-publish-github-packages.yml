@@ -21,7 +21,7 @@ jobs:
         needs: build
         runs-on: ubuntu-latest
         permissions:
-            contents: read
+            contents: write # Değişiklikleri commit etmek için yazma izni
             packages: write
         steps:
             - uses: actions/checkout@v3
@@ -31,7 +31,13 @@ jobs:
                   registry-url: https://npm.pkg.github.com/
                   scope: 'ahmetbozdoan'
             - run: npm install
+            - name: Bump version
+              run: |
+                  npm version patch -m "ci: bump version to %s"
+                  git push origin HEAD:main
+              env:
+                  GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
             - run: npm run build
             - run: npm publish
               env:
-                  NODE_AUTH_TOKEN: ${{secrets.GITHUB_TOKEN}}
+                  NODE_AUTH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
