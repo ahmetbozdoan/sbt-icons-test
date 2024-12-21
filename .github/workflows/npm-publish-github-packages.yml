@@ -36,7 +36,7 @@ jobs:
                   git commit -m "ci: commit changes before version bump" || echo "No changes to commit"
             - name: Bump version
               run: |
-                  npm version patch -m "ci: bump version to %s"
+                  npm version patch -m "ci: bump version to %s [skip ci]"
                   git push origin HEAD:main
               env:
                   GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
